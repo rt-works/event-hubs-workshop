@@ -1,0 +1,9 @@
+spring:
+  kafka:
+    consumer:
+      group-id: approval-${random.int[1,10000]}
+      bootstrap-servers:
+      properties:
+        security.protocol: SASL_SSL
+        sasl.mechanism: PLAIN
+        sasl.jaas.config: org.apache.kafka.common.security.plain.PlainLoginModule required username="$ConnectionString" password="Endpoint=sb://${BROKER_HOST}/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=";
