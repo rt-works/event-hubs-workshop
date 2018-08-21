@@ -1,0 +1,10 @@
+spring:
+  kafka:
+    template:
+      default-topic: new-investments
+    producer:
+      bootstrap-servers:
+      properties:
+        security.protocol: SASL_SSL
+        sasl.mechanism: PLAIN
+        sasl.jaas.config: org.apache.kafka.common.security.plain.PlainLoginModule required username="$ConnectionString" password="Endpoint=sb://bap-event-hubs-dev.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=";
