@@ -46,5 +46,9 @@ dependencies {
 	compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	compile("org.jetbrains.kotlin:kotlin-reflect")
 	compile("io.github.microutils:kotlin-logging:1.5.9")
+	compile("org.springframework.boot:spring-boot-starter-json")
+	compile("com.fasterxml.jackson.module:jackson-module-parameter-names")
+	compile("com.fasterxml.jackson.datatype:jackson-datatype-jdk8")
+	compile("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
