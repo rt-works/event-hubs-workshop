@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		kotlinVersion = '1.2.51'
+		kotlinVersion = '1.2.61'
 		springBootVersion = '2.0.4.RELEASE'
 	}
 	repositories {
@@ -45,5 +45,6 @@ dependencies {
 	compile('org.springframework.kafka:spring-kafka')
 	compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	compile("org.jetbrains.kotlin:kotlin-reflect")
+	compile("io.github.microutils:kotlin-logging:1.5.9")
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
